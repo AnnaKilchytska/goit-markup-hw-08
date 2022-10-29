@@ -1,0 +1,14 @@
+.footer {
+  background-color: $background-accent;
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-info {
+  margin-right: 70px;
+  flex-grow: 1;
+}
