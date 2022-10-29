@@ -32,6 +32,12 @@
 
 .sign-up__button {
   padding: 10px 28px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
 }
 
 .form__button {

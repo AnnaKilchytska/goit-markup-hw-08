@@ -4,15 +4,39 @@
 }
 
 .header__container {
-  @extend %flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation {
-  @extend %flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
-  @extend %flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
   margin-left: auto;
 }
 
@@ -59,16 +83,29 @@
 }
 
 .contact {
-  @extend %flex;
   margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contact__item {
-  margin-right: 50px;
   text-align: center;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -80,13 +117,16 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding: 32px 0;
 
   transition: color 250ms $cubic-bezier;
 
   &:hover,
   &:focus {
     color: $text-accent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
   }
 }
 

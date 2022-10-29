@@ -1,6 +1,12 @@
 .team {
-  display: flex;
-  column-gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
   &__heading {
     margin-bottom: 10px;
@@ -22,7 +28,19 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    flex-basis: calc((100% - 90px) / 4);
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
   }
 
   &__text {
