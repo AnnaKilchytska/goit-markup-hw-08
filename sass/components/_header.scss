@@ -16,28 +16,26 @@
 }
 
 .navigation {
+  display: flex;
+  align-items: space-between;
+
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: center;
   }
 }
 
 .site-nav {
+  margin-left: auto;
+  display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
-  margin-left: auto;
 }
 
 .site-nav__item {
@@ -84,6 +82,11 @@
 
 .contact {
   margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
