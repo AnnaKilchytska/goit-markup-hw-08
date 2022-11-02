@@ -111,6 +111,19 @@
 
     color: $text-secondary;
 
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 325px) {
+      font-size: 9px;
+    }
+
+    @media screen and (max-width: 365px) {
+      font-size: 10px;
+    }
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.71;
@@ -120,7 +133,22 @@
   &__link {
     color: $text-accent;
     margin-left: 5px;
+
+    @media screen and (max-width: 479px) {
+      margin-left: 0;
+    }
   }
+}
+
+.disclamer__box {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.disclamer__wraper {
+  display: inline-block;
 }
 
 .checkbox {
@@ -141,5 +169,10 @@
   .disclamer__input:checked + & {
     background-color: $text-accent;
     border: 1px solid $text-accent;
+  }
+
+  @media screen and (max-width: 365px) {
+    width: 13px;
+    height: 12px;
   }
 }

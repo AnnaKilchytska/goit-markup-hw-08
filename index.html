@@ -157,6 +157,7 @@
             <li class="products__item">
               <img
                 class="products__photo"
+                srcset="images/image-1.jpg 1x, images/image-1@2x.jpg 2x"
                 src="images/image-1.jpg"
                 alt="The working space of a programmer"
               />
@@ -165,6 +166,7 @@
             <li class="products__item">
               <img
                 class="products__photo"
+                srcset="images/image-2.jpg 1x, images/image-2@2x.jpg 2x"
                 src="images/image-2.jpg"
                 alt="A designer working on a project"
               />
@@ -173,6 +175,7 @@
             <li class="products__item">
               <img
                 class="products__photo"
+                srcset="images/image-3.jpg 1x, images/image-3@2x.jpg 2x"
                 src="images/image-3.jpg"
                 alt="A color palette on a tablette screen"
               />
@@ -188,7 +191,8 @@
           <ul class="team">
             <li class="team__item">
               <img
-                src="images/photo-1.jpg"
+                srcset="images/team-1.jpg 1x, images/team-1@2x.jpg 2x"
+                src="images/team-1.jpg"
                 alt="Фото дизайнера Ігора Дем'яненка"
               />
               <div class="team__thumb">
@@ -229,7 +233,8 @@
             </li>
             <li class="team__item">
               <img
-                src="images/photo-2.jpg"
+                srcset="images/team-2.jpg 1x, images/team-2@2x.jpg 2x"
+                src="images/team-2.jpg"
                 alt="Фото фронтенд розробниці Ольги Рєпіної"
               />
               <div class="team__thumb">
@@ -269,7 +274,8 @@
             </li>
             <li class="team__item">
               <img
-                src="images/photo-3.jpg"
+                srcset="images/team-3.jpg 1x, images/team-3@2x.jpg 2x"
+                src="images/team-3.jpg"
                 alt="Фото маркетолога Миколи Тарасова"
               />
               <div class="team__thumb">
@@ -309,7 +315,8 @@
             </li>
             <li class="team__item">
               <img
-                src="images/photo-4.jpg"
+                srcset="images/team-4.jpg 1x, images/team-4@2x.jpg 2x"
+                src="images/team-4.jpg"
                 alt="Фото дизайнера Михайла Єрмакова"
               />
               <div class="team__thumb">
@@ -546,9 +553,15 @@
                     <use href="./images/icons.svg#icon-check-form"></use>
                   </svg>
                 </span>
-                Погоджуюся з розсилкою та приймаю
-                <a href="#" class="disclamer__link"> Умови договору</a></label
-              >
+                <div class="disclamer__box">
+                  <span class="disclamer__text"
+                    >Погоджуюся з розсилкою та приймаю</span
+                  >
+                  <div class="disclamer__wraper">
+                    <a href="#" class="disclamer__link"> Умови договору</a>
+                  </div>
+                </div>
+              </label>
             </div>
 
             <button type="submit" class="button form__button">
@@ -599,21 +612,21 @@
               +380961111111</a
             >
           </li>
+        </ul>
 
-          <ul class="social-contacts">
-            <li class="social-contacts__item">
-              <a href="#" class="social-contacts__link">Instagram</a>
-            </li>
-            <li class="social-contacts__item">
-              <a href="#" class="social-contacts__link">Twitter</a>
-            </li>
-            <li class="social-contacts__item">
-              <a href="#" class="social-contacts__link">Facebook</a>
-            </li>
-            <li class="social-contacts__item">
-              <a href="#" class="social-contacts__link">LinkedIn</a>
-            </li>
-          </ul>
+        <ul class="social-contacts">
+          <li class="social-contacts__item">
+            <a href="#" class="social-contacts__link">Instagram</a>
+          </li>
+          <li class="social-contacts__item">
+            <a href="#" class="social-contacts__link">Twitter</a>
+          </li>
+          <li class="social-contacts__item">
+            <a href="#" class="social-contacts__link">Facebook</a>
+          </li>
+          <li class="social-contacts__item">
+            <a href="#" class="social-contacts__link">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </div>
