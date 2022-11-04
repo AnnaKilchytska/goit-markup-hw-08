@@ -1077,7 +1077,7 @@ a {
 .portfolio__link:hover .overlay, .portfolio__link:focus .overlay {
   transform: translateY(-100%);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .overlay {
     display: flex;
     align-items: center;
