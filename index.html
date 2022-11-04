@@ -190,11 +190,45 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                srcset="images/team-1.jpg 1x, images/team-1@2x.jpg 2x"
+              <picture>
+                <source
+                  srcset="
+                    images/team-desk-1.jpg    1x,
+                    images/team-desk-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px"
+                />
+                <source
+                  srcset="images/team-tab-1.jpg 1x, images/team-tab-1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px"
+                />
+
+                <source
+                  srcset="images/team-1.jpg 1x, images/team-1@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 480px) 450px"
+                />
+
+                <img
+                  src="images/team-1.jpg"
+                  alt="Фото дизайнера Ігора Дем'яненка"
+                />
+              </picture>
+              <!-- <img
+                srcset="
+                  images/team-1.jpg         450w,
+                  images/team-1@2x.jpg      900w,
+                  images/team-tab-1.jpg     354w,
+                  images/team-tab-1@2x.jpg  708w,
+                  images/team-desk-1.jpg    270w,
+                  images/team-desk-1@2x.jpg 540w
+                "
                 src="images/team-1.jpg"
                 alt="Фото дизайнера Ігора Дем'яненка"
-              />
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+              /> -->
               <div class="team__thumb">
                 <h3 class="team__heading">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -232,11 +266,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="images/team-2.jpg 1x, images/team-2@2x.jpg 2x"
-                src="images/team-2.jpg"
-                alt="Фото фронтенд розробниці Ольги Рєпіної"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team-desk-2.jpg    1x,
+                    images/team-desk-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px"
+                />
+                <source
+                  srcset="images/team-tab-2.jpg 1x, images/team-tab-2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px"
+                />
+
+                <source
+                  srcset="images/team-2.jpg 1x, images/team-2@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 480px) 450px"
+                />
+
+                <img
+                  src="images/team-2.jpg"
+                  alt="Фото фронтенд розробника Ольги Рєпіної"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__heading">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -273,11 +328,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="images/team-3.jpg 1x, images/team-3@2x.jpg 2x"
-                src="images/team-3.jpg"
-                alt="Фото маркетолога Миколи Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team-desk-3.jpg    1x,
+                    images/team-desk-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px"
+                />
+                <source
+                  srcset="images/team-tab-3.jpg 1x, images/team-tab-3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px"
+                />
+
+                <source
+                  srcset="images/team-3.jpg 1x, images/team-3@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 480px) 450px"
+                />
+
+                <img
+                  src="images/team-3.jpg"
+                  alt="Фото маркетолога Миколи Тарасова"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__heading">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -314,11 +390,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="images/team-4.jpg 1x, images/team-4@2x.jpg 2x"
-                src="images/team-4.jpg"
-                alt="Фото дизайнера Михайла Єрмакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team-desk-4.jpg    1x,
+                    images/team-desk-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px"
+                />
+                <source
+                  srcset="images/team-tab-4.jpg 1x, images/team-tab-4@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px"
+                />
+
+                <source
+                  srcset="images/team-4.jpg 1x, images/team-4@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="(min-width: 480px) 450px"
+                />
+
+                <img
+                  src="images/team-4.jpg"
+                  alt="Фото дизайнера Михайла Єрмакова"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__heading">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -553,14 +650,14 @@
                     <use href="./images/icons.svg#icon-check-form"></use>
                   </svg>
                 </span>
-                <div class="disclamer__box">
+                <span class="disclamer__box">
                   <span class="disclamer__text"
                     >Погоджуюся з розсилкою та приймаю</span
                   >
-                  <div class="disclamer__wraper">
+                  <span class="disclamer__wraper">
                     <a href="#" class="disclamer__link"> Умови договору</a>
-                  </div>
-                </div>
+                  </span>
+                </span>
               </label>
             </div>
 
@@ -591,7 +688,11 @@
       <div class="flex-container">
         <ul class="mobile-menu">
           <li class="mobile-menu__item">
-            <a href="./index.html" class="mobile-menu__link">Студія</a>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--current"
+              >Студія</a
+            >
           </li>
           <li class="mobile-menu__item">
             <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
@@ -603,13 +704,16 @@
 
         <ul class="mobile-contact">
           <li class="mobile-contact__item">
-            <a href="mailto:info@devstudio.com" class="mobile-contact__link">
-              info@devstudio.com</a
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contact__link--phone"
+            >
+              +380961111111</a
             >
           </li>
           <li class="mobile-contact__item">
             <a href="tel:+380961111111" class="mobile-contact__link">
-              +380961111111</a
+              info@devstudio.com</a
             >
           </li>
         </ul>
